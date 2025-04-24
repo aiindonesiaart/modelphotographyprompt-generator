@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Photography Prompt Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Model Photography Prompt Generator</h1>
+        
+        <div class="generator-container">
+            <div class="options-grid">
+                <!-- Basic Options -->
+                <div class="option-group">
+                    <h3>Basic Options</h3>
+                    <div class="form-group">
+                        <label for="gender">Person:</label>
+                        <select id="gender">
+                            <option value="woman">Woman</option>
+                            <option value="man">Man</option>
+                            <option value="non-binary">Non-binary</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="angle">Angle View:</label>
+                        <select id="angle">
+                            <option value="close-up">Close-up</option>
+                            <option value="medium shot">Medium shot</option>
+                            <option value="full body">Full body</option>
+                            <option value="low angle">Low angle</option>
+                            <option value="high angle">High angle</option>
+                            <option value="profile">Profile</option>
+                            <option value="overhead">Overhead</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="ethnicity">Ethnicity:</label>
+                        <select id="ethnicity">
+                            <option value="Caucasian">Caucasian</option>
+                            <option value="African">African</option>
+                            <option value="Asian">Asian</option>
+                            <option value="Hispanic">Hispanic</option>
+                            <option value="Middle Eastern">Middle Eastern</option>
+                            <option value="Mixed">Mixed</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Appearance -->
+                <div class="option-group">
+                    <h3>Appearance</h3>
+                    <div class="form-group">
+                        <label for="hairstyle">Hairstyle:</label>
+                        <select id="hairstyle">
+                            <option value="long straight">Long straight</option>
+                            <option value="long wavy">Long wavy</option>
+                            <option value="short">Short</option>
+                            <option value="bob">Bob</option>
+                            <option value="afro">Afro</option>
+                            <option value="braids">Braids</option>
+                            <option value="ponytail">Ponytail</option>
+                            <option value="bun">Bun</option>
+                            <option value="bald">Bald</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="hair-color">Hair Color:</label>
+                        <select id="hair-color">
+                            <option value="black">Black</option>
+                            <option value="brown">Brown</option>
+                            <option value="blonde">Blonde</option>
+                            <option value="red">Red</option>
+                            <option value="brunette">Brunette</option>
+                            <option value="gray">Gray</option>
+                            <option value="colorful">Colorful</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="body-type">Body Type:</label>
+                        <select id="body-type">
+                            <option value="slim">Slim</option>
+                            <option value="athletic">Athletic</option>
+                            <option value="curvy">Curvy</option>
+                            <option value="plus-size">Plus-size</option>
+                            <option value="muscular">Muscular</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Clothing -->
+                <div class="option-group">
+                    <h3>Clothing</h3>
+                    <div class="form-group">
+                        <label for="upper">Upper:</label>
+                        <select id="upper">
+                            <option value="bra">Bra</option>
+                            <option value="t-shirt">T-shirt</option>
+                            <option value="tank top">Tank top</option>
+                            <option value="blouse">Blouse</option>
+                            <option value="shirt">Shirt</option>
+                            <option value="sweater">Sweater</option>
+                            <option value="none">None</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="upper-color">Upper Color:</label>
+                        <select id="upper-color">
+                            <option value="white">White</option>
+                            <option value="black">Black</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="patterned">Patterned</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lower">Lower:</label>
+                        <select id="lower">
+                            <option value="pants">Pants</option>
+                            <option value="jeans">Jeans</option>
+                            <option value="shorts">Shorts</option>
+                            <option value="skirt">Skirt</option>
+                            <option value="leggings">Leggings</option>
+                            <option value="none">None</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lower-color">Lower Color:</label>
+                        <select id="lower-color">
+                            <option value="black">Black</option>
+                            <option value="blue">Blue</option>
+                            <option value="white">White</option>
+                            <option value="gray">Gray</option>
+                            <option value="denim">Denim</option>
+                            <option value="patterned">Patterned</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Background & Lighting -->
+                <div class="option-group">
+                    <h3>Background & Lighting</h3>
+                    <div class="form-group">
+                        <label for="background">Background:</label>
+                        <select id="background">
+                            <option value="studio">Studio</option>
+                            <option value="urban">Urban</option>
+                            <option value="nature">Nature</option>
+                            <option value="beach">Beach</option>
+                            <option value="indoor">Indoor</option>
+                            <option value="abstract">Abstract</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lighting">Lighting:</label>
+                        <select id="lighting">
+                            <option value="soft">Soft</option>
+                            <option value="dramatic">Dramatic</option>
+                            <option value="natural">Natural</option>
+                            <option value="neon">Neon</option>
+                            <option value="backlit">Backlit</option>
+                            <option value="rim light">Rim light</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="style">Style:</label>
+                        <select id="style">
+                            <option value="fashion">Fashion</option>
+                            <option value="editorial">Editorial</option>
+                            <option value="portrait">Portrait</option>
+                            <option value="boudoir">Boudoir</option>
+                            <option value="conceptual">Conceptual</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Custom Input -->
+            <div class="custom-input">
+                <h3>Custom Ideas</h3>
+                <div class="form-group">
+                    <label for="custom-figure">Figure Details:</label>
+                    <textarea id="custom-figure" placeholder="Add any additional details about the figure"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="custom-clothing">Clothing Details:</label>
+                    <textarea id="custom-clothing" placeholder="Add any additional details about clothing"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="custom-colors">Color Details:</label>
+                    <textarea id="custom-colors" placeholder="Add any additional color details"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="custom-other">Other Details:</label>
+                    <textarea id="custom-other" placeholder="Add any other details"></textarea>
+                </div>
+            </div>
+            
+            <button id="generate-btn">Generate Prompt</button>
+        </div>
+        
+        <div class="result-container">
+            <h3>Generated Prompt</h3>
+            <div class="prompt-display" id="prompt-display"></div>
+            <button id="copy-btn"><i class="fas fa-copy"></i> Copy Prompt</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
